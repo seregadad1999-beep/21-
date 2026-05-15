@@ -1,0 +1,92 @@
+:root {
+    /* CSS-переменные, которые Telegram передает в приложение */
+    --tg-bg-color: var(--tg-theme-bg-color, #ffffff);
+    --tg-text-color: var(--tg-theme-text-color, #000000);
+    --tg-button-color: var(--tg-theme-button-color, #2481cc);
+    --tg-button-text-color: var(--tg-theme-button-text-color, #ffffff);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--tg-bg-color);
+    color: var(--tg-text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.counter-label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    opacity: 0.7;
+}
+
+.counter-display {
+    font-size: 72px;
+    font-weight: 700;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+button {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.1s ease, opacity 0.2s ease;
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+.main-button {
+    background-color: var(--tg-button-color);
+    color: var(--tg-button-text-color);
+}
+
+.secondary-button {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--tg-text-color);
+}
+
+.user-info {
+    margin-top: 30px;
+    font-size: 14px;
+    opacity: 0.6;
+    word-break: break-word;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
